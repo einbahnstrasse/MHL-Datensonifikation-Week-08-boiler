@@ -1,5 +1,5 @@
 # MHL-Datensonifikation-Week-08-boiler
-Functions, V60 Coffee Brew Data, Jupyter Lab, MIDI
+***Functions, V60 Coffee Brew Data, JupyterLab, MIDI***
 
 ## Steps to Use JupyterLab in a Virtual Environment 
 
@@ -15,45 +15,61 @@ cd /drag/and/drop/path/to/this/repository
 
 ### 2. Create a Virtual Environment.
 
-Open a terminal and run:
+Now that your Terminal is pointing to the correct folder, run: 
 
 ```
-bash
-Copy code
 python3 -m venv myenv
 ```
 
-This creates an isolated Python environment in a folder named myenv.
+This creates an isolated Python environment in a folder named `myenv`, which is separate from the Python version you installed on your computer. 
 
-Activate the Virtual Environment:
+### 3. Activate the Virtual Environment
 
 On macOS/Linux:
-bash
-Copy code
+
+```
 source myenv/bin/activate
+```
+
 On Windows:
-cmd
-Copy code
+```
 myenv\Scripts\activate
-Install JupyterLab in the Virtual Environment: Once the environment is active (you'll see (myenv) in the terminal prompt), run:
+```
 
-bash
-Copy code
+### 4. Install JupyterLab in the Virtual Environment  
+
+Once the environment is active (you'll see (myenv) in the terminal prompt), run:
+
+```
 pip install jupyterlab
-Install Additional Libraries (Optional): If the notebook requires pandas, numpy, or other libraries, students can install them in the same virtual environment:
+```
 
-bash
-Copy code
+### 5. Install Additional Python Libraries
+
+```
 pip install pandas numpy
-Run JupyterLab:
+```
+
+### 6. Run JupyterLab
 
 While still in the virtual environment, launch JupyterLab:
-bash
-Copy code
-jupyter lab
-This will start JupyterLab, and they can open their .ipynb notebooks.
-Deactivate the Virtual Environment: After they finish using JupyterLab, they can deactivate the environment:
 
-bash
-Copy code
+```
+jupyter lab
+```
+
+This will start JupyterLab in a browser window. 
+It looks kind of funny, but it's running a VS Code-like environment on a **local server**. 
+Inside this **local server**, you can open **Jupyter Notebooks (.ipynb files)**.
+Read, edit, run, save, and export your work as you would in VS Code.
+
+### 7. Deactivate the Virtual Environment   
+
+After you finish using JupyterLab, save your work in JupyterLab.
+Then deactivate the virtual environment in Terminal:
+
+```
 deactivate
+```
+
+And that's it! 
